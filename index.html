@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--*=============google font link ============= -->
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Recursive:wght@300..1000&display=swap" rel="stylesheet">
+    <!--*=============google font link ============= -->
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap" rel="stylesheet">
+    <!--*=============fontawsome link css============= -->
+    <link rel="stylesheet" href="./css/all.min.css"/>
+    <!--*=============bootstrap link css============= -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <!--$============= css link================= -->
+    <link rel="stylesheet" href="./css/style.css"/>
+    <!--^============= title================= -->
+    <title>Games Home</title>
+</head>
+<body>
+
+    <!---------- start home  ----------->
+    <section class="games" id="games">
+        <header>
+            <img src="./img/wraper.png" class="w-100" alt="photo-game"/>
+        </header>
+        <nav class="navbar position-sticky top-0 z-3 navbar-expand-lg navbar-light bg-light w-75 ">
+                <div class="container">
+                    <a class="navbar-brand " > 
+                        <img src="./img/logo-sm.png" alt="logo img " width="40"/>
+                        GAME REVIEWS</a>
+                    <button
+                        class="navbar-toggler d-lg-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavId"
+                        aria-controls="collapsibleNavId"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-category="MMORPG" href="#" aria-current="page"
+                                    >MMORPG
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-category="SHOOTER" href="#">SHOOTER</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-category="SAILING" href="#">SAILING</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-category="PERMADEATH" href="#">PERMADEATH</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-category="SUPERHERO" href="#">SUPERHERO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-category="PIXEL" href="#">PIXEL</a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+        </nav>
+        <main  class="container home my-5">
+            <section class="position-relative">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="gameData">
+                    <!-- <div class="col">
+                        <div class="h-100 bg-transparent">
+                            <div class="card-body" >
+                                <figure class="position-relative">
+                                    <img src="./img/logo-sm.png" class="card-img-top h-100"/>
+                                </figure>
+                                <figcaption>
+                                    <div>
+                                        <h3 class="h6 small"> ttttt</h3>
+                                        <span class="badge text-bg-primary p-2">ff</span>
+                                    </div>
+                                    <p class="card-text small text-center opacity-50">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, eveniet.
+                                    </p>
+                                </figcaption>
+                                <footer class="card-footer small hstack justify-content-between">
+                                    <span class="badge badge-color-">mmmm</span>
+                                    <span class="badge badge-color-">pppp</span>
+                                </footer>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+        </main>
+    </section>
+    <!---------- end home  ----------->
+
+    <!---------- start details-------->
+    <section class="details d-none" id="details">
+        <div class="container">
+            <header class="hstack justify-content-between">
+                <h1 class="text-center h3 py-4">Details Game</h1>
+                <button class="btn-close-white btn-close" id="btnClose"></button>
+            </header>
+            <div class="row g-4" id="detailsContent">
+                <!-- <div class="col-md-4">
+                    <img  alt="img" class="w-100" id="imgDetails"/>
+                </div>
+                <div class="col-md-8">
+                    <h3>Title: Genshin Impact</h3>
+                    <p  >Category: <span class="badge text-bg-info" id="Category"></span></p>
+                    <p  id="Platform">dkkdd</p>
+                    <p  id="Status">ldldld</p>
+                    <p class="small" id="textDetails">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident saepe nam expedita, nulla similique dignissimos assumenda perspiciatis dolorum possimus modi.</p>
+                    <a class="btn btn-outline-warning" target="_blank"  id="btnShow">Show Game</a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!---------- end details-------->
+
+    <!--------- start loading  ---------->
+    <div class="loading  d-none">
+        <span class="loader"></span>
+    </div>
+    <!--------- end loading  ---------->
+
+    <!--*=============fontawsome link css============= -->
+    <script src="./js/all.min.js"></script> 
+    <!--*=========bootstrap link js =========== -->
+    <script src="./js/bootstrap.bundle.min.js"></script> 
+    <!--?============= js link================= -->
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+body{
+    background-color:#272b30 ;
+    font-family: "Recursive", sans-serif;
+    color: white !important;
+}
+
+/************* start navbar **********/
+header img {
+    max-height: 30vh;
+    object-fit: cover;
+}
+
+.navbar {
+    background-color: #3a497b !important;
+}
+
+nav {
+    margin-inline: auto;
+    margin-top: -30px !important;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+}
+
+.navbar-nav a {
+    color: white !important;
+    font-size: 15px;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-family:"Recursive", sans-serif;
+    font-weight: 500;
+    font-size: 20px !important;
+}
+
+.navbar-nav .nav-link.active ,
+.nav-item .nav-link:hover {
+    color: #09c !important;
+    transition: color 0.5s;
+}
+/************* end navbar **********/
+
+
+/*********start home games **********/
+.home .card {
+    filter: grayscale(0.7);
+    transition: transform 0.5s, filter 0.5s 0.1s;
+    cursor: pointer;
+}
+
+.home .card:hover {
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+
+figcaption h3 ,
+figcaption p {
+    color: white !important;
+}
+
+
+.badge-color {
+    background-color: #32383e;
+}
+/*********end home games **********/
+
+
+/************loading ***************/
+.loader {
+    width: 70px;
+    height: 70px;
+    border: 3px solid #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    margin-left: 50%;
+  } 
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-bottom-color: #FF3D00;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+/************end loading ***************/
+
